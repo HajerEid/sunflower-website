@@ -1,0 +1,271 @@
+*{
+    padding: 0; 
+    margin: 0 ;
+}
+
+body {
+    font-family: "Faculty Glyphic", sans-serif;
+    background-color: #FFFBE6;
+    color: #333;
+}
+/*Header*/
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/1287124/pexels-photo-1287124.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+header .layout{
+    width: 100%;
+    height: 100%;
+    background-color: #72bf7847;;
+
+}
+.header-content {
+    background-color: #72bf78c9;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+header h1 {
+    margin:0px 10px;
+    text-align: center;
+    font-family: "Rock Salt", cursive;
+    color: gold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    padding: 30px 15px;
+}
+
+nav ul li a {
+    color: #347928;
+    text-decoration: none;
+    font-weight: bold;
+}
+.caption {
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 100px;
+    color: white;
+    text-shadow: 2px 2px 2px #000000 ;
+}
+.caption h2 {
+    font-family: "Rock Salt", cursive;
+    font-size: 50px;
+}
+.caption p{
+   padding: 25px; 
+   font-size: 25px;
+   
+}
+.caption button{
+    padding:20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #72BF78;
+}
+.caption button a{
+    text-decoration: none;
+    color: #347928 ;
+    font-weight: bold;
+}
+
+/*main content*/
+#more ,#gallary , #JoinUs{
+    background-color: #C0EBA6;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+#more{
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+}
+#more .container{
+    display: flex;
+    align-items: flex-start;
+}
+#more img{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border: 2px dashed #ffffff;
+    padding: 10px;
+}
+#more .img1{
+    width: 25%;
+    height: auto;
+    margin-right: 20px;
+    
+}
+#more .img2{
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 50%;
+    height: auto;
+    
+}
+#more .text{
+    font-size: 24px;
+    color: #1A3636;
+    text-shadow: 1px 1px 1px #ffffff;
+    margin: 20px;
+   
+}
+#more .text h2{
+    color: #00712D;
+    font-family:"Sour Gummy", serif;;
+}
+#more .text .outer {
+    margin-left: 5px ; 
+    list-style: disclosure-closed; 
+    list-style-position: outside ; 
+    margin-left: 55px;
+}
+#more .text ul h3{
+    color: #825B32;
+    font-family: "Sour Gummy", serif;
+    text-decoration: underline solid;
+
+}
+ li::marker {
+    color:#825B32;
+    font-weight: bolder;
+}
+#more .text .outer ul {
+    margin-left: 25px;
+    list-style-type: "-";
+    list-style-position: inside;
+}
+
+
+/*gallery*/
+
+#gallary .title{
+    font-size: 40px;
+    text-shadow: 1px 1px 1px #ffffff;
+    margin: 20px;
+    color: #00712D;
+    font-family: "Sour Gummy", serif;
+
+} 
+#gallary .discription{
+    margin: 25px;
+    font-weight: bolder;
+}
+
+#gallary .pic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#gallary .pic .card{
+    background-color: #88C273;
+    margin: 10px;
+    padding: 20px;
+    width: 22%;
+    box-shadow:0 5px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#gallary .pic .card img{
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        border: 2px dashed #ffffff;
+        
+}
+#gallary .pic .card h2{
+    color: #243642;
+    font-family: "Sour Gummy", serif;
+    font-size: 25px;
+}
+
+/*join us*/
+#JoinUs{
+    padding:5px;
+}
+#JoinUs .box{
+    padding: 10px;
+    text-align: center;
+    background-image: url('https://images.pexels.com/photos/54267/sunflower-blossom-bloom-flowers-54267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+}
+#JoinUs .box h2 {
+    font-size: 40px;
+    text-shadow: 1px 1px 1px #000000;
+    margin: 20px;
+    color: #00712D;
+    font-family: "Sour Gummy", serif;
+}
+#JoinUs .box p {
+    margin: 20px;
+    color: wheat;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+#JoinUs .submit {
+    display: flex;
+    border: 2px dashed black;
+    padding: 10px;
+    width: 400px;
+    margin: 0 auto;
+
+}
+
+#JoinUs .submit input[type="text"] {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #FEFF9F;
+}
+
+#JoinUs .submit input[type="text"]::placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+#JoinUs .submit button {
+    background-color: gold;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+/*fooder*/
+footer{
+    background-color: #72bf78;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    }
+footer img {
+    width: 30px;
+    height: 30px;
+
+}
